@@ -6,13 +6,13 @@ content:
     label: Posts
     path: src/_posts
     type: collection
-    fields:
+    fields: [ title, published, "tags[0]", author.name ]
       
   - name: authors
     label: Authors
     path: src/_data/authors.json
     type: file
-    fields:
+    fields: [ title, published, "tags[0]", author.name ]
       
 view:
   fields: [ title, date, published ] # title is the first entry and thus will be set to primary
